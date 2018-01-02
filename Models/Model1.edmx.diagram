@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a24f1dcb728d429d8ce79d1ad47f4b2c" Name="Diagram1">
+        <EntityTypeShape EntityType="Black_fridayModel.category" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Black_fridayModel.image" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Black_fridayModel.product" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Black_fridayModel.productsToSale" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Black_fridayModel.sale" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Black_fridayModel.store" Width="1.5" PointX="7.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Black_fridayModel.stores_to_sales" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Black_fridayModel.sysdiagram" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Black_fridayModel.user" Width="1.5" PointX="9.75" PointY="6.25" IsExpanded="true" />
+        <AssociationConnector Association="Black_fridayModel.FK_products_images" ManuallyRouted="false" />
+        <AssociationConnector Association="Black_fridayModel.FK_sales_images" ManuallyRouted="false" />
+        <AssociationConnector Association="Black_fridayModel.FK_productsToSale_products" ManuallyRouted="false" />
+        <AssociationConnector Association="Black_fridayModel.FK_productsToSale_sales" ManuallyRouted="false" />
+        <AssociationConnector Association="Black_fridayModel.FK_stores_to_sales_sales" ManuallyRouted="false" />
+        <AssociationConnector Association="Black_fridayModel.FK_stores_to_sales_stores" ManuallyRouted="false" />
+        <AssociationConnector Association="Black_fridayModel.FK_users_stores" ManuallyRouted="false" />
+        <AssociationConnector Association="Black_fridayModel.FK_products_categories" ManuallyRouted="true" >
+          <ConnectorPoint PointX="7.75" PointY="1.4551669300093635" />
+          <ConnectorPoint PointX="5.5725" PointY="1.4551669300093635" />
+          <ConnectorPoint PointX="5.5725" PointY="1.927643229166667" />
+          <ConnectorPoint PointX="4.5" PointY="1.927643229166667" />
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
